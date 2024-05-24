@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Nilai Mahasiswa</title>
+</head>
+<body>
+	<h1>Input Nilai Mahasiswa</h1>
+	<form id="formNilai">
+		<label for="nim">NIM:</label><br>
+		<input type="number" id="nim" name="nim"><br>
+		<label for="nama">Nama:</label><br>
+		<input type="text" id="nama" name="nama"><br>
+		<label for="matkul">Mata Kuliah:</label><br>
+		<select id="matkul" name="matkul">
+			<option value="Algoritma">Algoritma</option>
+			<option value="Kalkulus 2">Kalkulus 2</option>
+			<option value="Diskrit">Diskrit</option>
+			<option value="Pendidikan Kewarganegaraan">Pendidikan Kewarganegaraan</option>
+			<option value="Bahasa Indonesia">Bahasa Indonesia</option>
+			<option value="Bahasa Inggris">Bahasa Inggris</option>
+			<option value="Pemrograman Komputer">Pemrograman Komputer</option>
+			<option value="Aljabar">Aljabar</option>
+			<option value="Desain">Desain</option>
+			<option value="Arsitektur Komputer">Arsitektur Komputer</option>
+		</select><br>
+		<label for="nilai">Nilai:</label><br>
+		<input type="number" id="nilai" name="nilai"><br>
+		<button type="button" id="btnTampil">TAMPIL</button>
+		<button type="reset" id="btnReset">RESET</button>
+	</form>
+		<div id="result"></div>
+
+	<script src="javascript.js"></script>
+    <link rel="stylesheet" href="tampilan.css">
+<p class="link">
+	<a href="profil.html">Profil Saya</a><br>
+	<a href="array.html">Array</a>
+</p>
+</body>
+</html>

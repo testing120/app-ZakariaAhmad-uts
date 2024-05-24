@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body class="array">
+    <script>
+      var NamaMhs = ["Rahsya", "Niam", "Ghani"];
+      var TahunLahir = [2005, 2006, 2005];
+      var HandphoneMhs = ["081232342424", "08924231244", "0851431879"];
+
+      document.write("Array awal:<br>");
+      document.write("Nama Mahasiswa: " + NamaMhs.join(", ") + "<br>");
+      document.write("Tahun Lahir: " + TahunLahir.join(", ") + "<br>");
+      document.write(
+        "Nomor Handphone: " + HandphoneMhs.join(", ") + "<br><br>"
+      );
+
+      NamaMhs.push("Ahdi");
+      TahunLahir.push(2005);
+      HandphoneMhs.push("08234567891");
+
+      document.write("Array setelah penambahan elemen:<br>");
+      document.write("Nama Mahasiswa: " + NamaMhs.join(", ") + "<br>");
+      document.write("Tahun Lahir: " + TahunLahir.join(", ") + "<br>");
+      document.write(
+        "Nomor Handphone: " + HandphoneMhs.join(", ") + "<br><br>"
+      );
+
+      NamaMhs.pop();
+      TahunLahir.pop();
+      HandphoneMhs.pop();
+
+      document.write("Array setelah penghapusan elemen:<br>");
+      document.write("Nama Mahasiswa: " + NamaMhs.join(", ") + "<br>");
+      document.write("Tahun Lahir: " + TahunLahir.join(", ") + "<br>");
+      document.write(
+        "Nomor Handphone: " + HandphoneMhs.join(", ") + "<br><br>"
+      );
+    </script>
+    <link rel="stylesheet" href="tampilan.css" />
+  </body>
+</html>
