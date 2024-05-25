@@ -4,8 +4,7 @@ document.getElementById('btnTampil').addEventListener('click', function() {
     var matkul = document.getElementById('matkul').value;
     var nilai = document.getElementById('nilai').value;
 
-    // Validasi apakah nilai berupa angka dan berada dalam rentang 0-100
-    if (!isNaN(nilai) && nilai >= 0 && nilai <= 100) {
+    if (nilai >= 0 && nilai <= 100) {
         var nilaiHuruf = '';
         var indeksNilai = 0;
         var keterangan = '';
@@ -48,7 +47,7 @@ document.getElementById('btnTampil').addEventListener('click', function() {
         result += '<tr><td>' + nim + '</td><td>' + nama + '</td><td>' + matkul + '</td><td>' + nilai + '</td><td>' + nilaiHuruf + '</td><td>' + indeksNilai + '</td><td>' + keterangan + '</td></tr></table>';
         document.getElementById('result').innerHTML = result;
     } else {
-        alert("Masukkan nilai dalam bentuk angka dan rentang 0-100.");
+        alert("Masukkan angka 1-100");
     }
 });
 
